@@ -7,7 +7,9 @@ function AppHeader() {
   const [modalOpen, setModalOpen] = useState(false);
   return (
     <div className={styles.appHeader}>
-      <MyButton variant="primary">Add Task</MyButton>
+      <MyButton variant="primary" onClick={() => setModalOpen(true)}>
+        Add Task
+      </MyButton>
       <SelectButton>
         <option value="all">All</option>
         <option value="incomplete">Incomplete</option>
